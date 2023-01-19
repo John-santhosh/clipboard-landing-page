@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+
+:root{
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+    min-height: calc(100vh - 1px)
+}
+h1,h2,h3{
+    font-weight: 600;
+    color: var(--Dark-Grayish-Blue);
+    line-height: 1.7;
+}
+p{
+    color: var(--Grayish-Blue);
+    line-height: 1.7;
+}
+.btn{
+    padding: .8rem 0;
+    border-radius: 2rem;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    background: var(--Strong-Cyan);
+}
+.btn2{
+    background: var(--Light-Blue);
+}
+.container{
+    padding: 0 1rem;
+}
+
+.hero{
+    background: url(../images/bg-header-mobile.png) center/cover no-repeat,hsl(0, 0%, 98%);
+    margin-bottom: 7rem;
+}
+
+.hero-img{
+    padding: 6rem 0 4rem;
+}
+
+.features{
+    margin-top: 10rem;
+}
+.mainFeatures > div {
+    margin: 5rem 0 !important;
+}
+.feature-mainImg{
+    margin-bottom: 6rem;
+}
+.mainFeatures img{
+    margin-bottom: 1.5rem;
+}
