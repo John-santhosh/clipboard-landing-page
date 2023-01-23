@@ -32,12 +32,26 @@ p{
     font-weight: 400;
     font-size: 18px;
     background: var(--Strong-Cyan);
+    border: 1px solid var(--Strong-Cyan);
+    /* box-shadow: 0px 5px 20px var(--Strong-Cyan); */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, var(--Strong-Cyan) 0px 3px 6px;
+    width: 100%;
 }
 .btn2{
     background: var(--Light-Blue);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, var(--Light-Blue) 0px 3px 6px;
+    border: 1px solid var(--Light-Blue);
+
+}
+.btn:hover{
+    background: hsl(171, 86%, 51%);
+    color: white;
+}
+.btn2:hover{
+    background: hsl(228, 96%, 72%);
 }
 .container{
-    padding: 0 1rem;
+    padding: 0 1.5rem;
 }
 
 .hero{
@@ -60,4 +74,87 @@ p{
 }
 .mainFeatures img{
     margin-bottom: 1.5rem;
+}
+[class^="featImg"]{
+    margin-bottom: 1rem;
+}
+.partners{
+    margin: 12rem 0;
+}
+.partner{
+    margin: 6rem 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+footer{
+    background:  hsl(0deg 0% 92% / 62%);
+    padding: 2rem 0;
+    margin-top: 10rem;
+}
+.footerImg{
+    margin: 2rem 0;
+}
+.footerImg img{
+    width: 55px
+
+}
+.footerEle{
+    margin: 3rem 0;
+}
+.footerEle p{
+    color: var(--Grayish-Blue);
+    font-size: 18px;
+}
+.footerEle p:hover{
+    color:hsl(171, 84%, 46%);
+}
+
+img {
+    /* background: blue !important;  */
+    color: green !important;
+}
+svg:hover path {
+    fill: hsl(171, 84%, 46%);
+}
+
+@media only screen  and (min-width: 768px){
+    .hero{
+        background: url(../images/bg-header-desktop.png) center/cover no-repeat,hsl(0, 0%, 98%);
+    }
+    p{
+        width: 60%;
+        margin: auto;
+        /* background: orange; */
+    }
+    
+    .pearks p{
+        width: 90%;
+        margin: 0;
+    }
+    .btn{
+        width: 30%;
+    }
+    .partners{
+        margin: unset;
+    }
+    .footerEle{
+        flex-grow: 1;
+        justify-content: space-evenly;
+    }
+    .footerEle p{
+        width: 100%;
+        margin: 1rem;
+    }
+    footer{
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .introImg{
+        transform:translate(-2.5rem);
+    }
 }
